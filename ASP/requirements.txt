@@ -1,0 +1,8 @@
+# requirements.txt (for running ASP/asp.py)
+
+numpy>=1.23
+scipy>=1.9
+matplotlib>=3.7
+opencv-python>=4.8
+Pillow>=9.5
+torch>=2.0

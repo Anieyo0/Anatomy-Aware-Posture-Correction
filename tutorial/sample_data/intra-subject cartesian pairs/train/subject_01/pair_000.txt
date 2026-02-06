@@ -1,0 +1,2 @@
+sample_data/images/correct_posture/subject_01/correct_subject_01.png
+sample_data/images/incorrect_posture/subject_01/incorrect_subject_01.png

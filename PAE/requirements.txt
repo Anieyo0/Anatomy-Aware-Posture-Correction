@@ -1,0 +1,4 @@
+# requirements.txt (for running PAE/pae.py)
+
+numpy>=1.23
+matplotlib>=3.7

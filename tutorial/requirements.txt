@@ -1,0 +1,12 @@
+# requirements.txt (for running tutorial/reproduce_voxmorph_diff_asp_pae.ipynb)
+
+numpy>=1.23
+matplotlib>=3.7
+opencv-python>=4.8
+Pillow>=9.5
+
+torch>=2.0
+torchvision>=0.15
+
+jupyter>=1.0
+ipykernel>=6.0
