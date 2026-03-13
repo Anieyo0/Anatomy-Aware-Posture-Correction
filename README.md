@@ -4,8 +4,6 @@
   <img src="./preview/preview.gif" alt="Interactive posture-correction demo showing warped image and flow magnitude" width="100%" />
 </p>
 
-## Interactive demo
-
 An interactive web-based prototype is available at [the live demo](https://across-border-monday-vacancies.trycloudflare.com/).
 
 This repository provides a reference implementation of the paper:
