@@ -1,7 +1,7 @@
 # Anatomy-Aware Deformable Registration for Posture Correction in Veterinary Thoracic Radiographs (Code)
 
 <p align="center">
-  <img src="./gif.gif" alt="Interactive posture-correction demo showing warped image and flow magnitude" width="900" />
+  <img src="./preview/preview.gif" alt="Interactive posture-correction demo showing warped image and flow magnitude" width="900" />
 </p>
 
 This repository provides a reference implementation of the paper:
