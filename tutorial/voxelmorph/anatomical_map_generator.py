@@ -43,7 +43,7 @@ def compute_anatomical_map(root_dir, image_size=(256, 256), alpha=0.5, visualize
     mean_scaled = (mean_map - mean_map.min()) / (mean_map.max() - mean_map.min() + 1e-6)
 
     # std map 계산
-    std_map = np.std(imgs, axis=0)
+    std_map = np.std(imgs, axis=0, ddof=1)
     std_map_normalized = std_map / (std_map.max() + 1e-6)
 
     # mean_std 기반 anatomical map

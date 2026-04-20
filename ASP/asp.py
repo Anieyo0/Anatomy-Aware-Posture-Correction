@@ -108,7 +108,7 @@ def compute_anatomical_map(
     stack = np.stack(imgs, axis=0)  # (N, H, W)
 
     mean_map = np.mean(stack, axis=0).astype(np.float32)
-    std_map = np.std(stack, axis=0).astype(np.float32)
+    std_map = np.std(stack, axis=0, ddof=1).astype(np.float32)
 
     mean_scaled = (mean_map - mean_map.min()) / (mean_map.max() - mean_map.min() + 1e-6)
     std_norm = std_map / (std_map.max() + 1e-6)
