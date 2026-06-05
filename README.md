@@ -4,7 +4,7 @@
   <img src="./preview/preview.gif" alt="Interactive posture-correction demo showing warped image and flow magnitude" width="100%" />
 </p>
 
-An interactive web-based prototype is available at [the live demo](https://https://registration.taild8ab2a.ts.net//).
+An interactive web-based prototype is available at [the live demo](https://registration.taild8ab2a.ts.net//).
 
 This repository provides a reference implementation of the paper:
 
