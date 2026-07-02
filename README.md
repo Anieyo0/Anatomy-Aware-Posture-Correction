@@ -24,7 +24,7 @@ The core idea is to make learning-based deformable image registration focus on t
 
 > Note: The current snapshot contains standalone demos (ASP/PAE/spatial normalization) and a tutorial folder that demonstrates the VoxelMorph-diff + ASP + PAE pipeline on sample data.
 
-```
+```text
 .
 ├── requirements.txt
 ├── asp.py                            # ASP builder + 3D visualization (CLI)
@@ -58,6 +58,17 @@ The core idea is to make learning-based deformable image registration focus on t
 
 ---
 
+## Dataset
+
+The in-house **Chonnam University Veterinary Thoracic Radiograph Dataset** constructed for this study is publicly available. The released data comprise paired correct- and incorrect-pose thoracic radiographs together with the expert landmark and segmentation annotations used for evaluation.
+
+* **Download:** [Zenodo Record (DOI: 10.5281/zenodo.21127344)](https://zenodo.org/records/21127344)
+* **License:** CC BY-NC 4.0
+
+To run the tutorials using the full dataset, please download the files from Zenodo and organize them according to the structure described in the **Data convention** section below.
+
+---
+
 ## Installation
 
 ### 1) Create an environment
@@ -65,7 +76,7 @@ The core idea is to make learning-based deformable image registration focus on t
 ```bash
 python -m venv .venv
 # Windows:
-.venv\Scripts\activate
+.venv\Scriptsctivate
 # Linux/macOS:
 source .venv/bin/activate
 ```
@@ -105,9 +116,7 @@ This script reproduces the sequential preprocessing pipeline:
 **denoise → margin/aspect alignment → x-translation (centroid-based)**.
 
 ```bash
-python spatial_normalization/spatial_normalization.py \
-  --input_root  tutorial/sample_data/images \
-  --output_root tutorial/sample_data/images_normalized
+python spatial_normalization/spatial_normalization.py   --input_root  tutorial/sample_data/images   --output_root tutorial/sample_data/images_normalized
 ```
 
 Key arguments:
@@ -130,13 +139,7 @@ python spatial_normalization/spatial_normalization.py --help
 Example using included samples:
 
 ```bash
-python asp.py \
-  --root_dir ASP/samples_asp \
-  --out_dir ASP/outputs_asp_demo \
-  --base_image ASP/samples_asp/subject_01/subject_01_sample.png \
-  --w 256 --h 256 \
-  --alpha 1.0 \
-  --sigma 3.0
+python asp.py   --root_dir ASP/samples_asp   --out_dir ASP/outputs_asp_demo   --base_image ASP/samples_asp/subject_01/subject_01_sample.png   --w 256 --h 256   --alpha 1.0   --sigma 3.0
 ```
 
 Outputs:
@@ -184,23 +187,6 @@ A simple pairing list format is included under:
 
 ---
 
-## Citation
-
-If you use this code, please cite the corresponding paper:
-
-```bibtex
-@article{anatomy_aware_vet_thorax_registration,
-  title   = {Anatomy-Aware Deformable Registration for Posture Correction in Veterinary Thoracic Radiographs},
-  author  = {--},
-  journal = {--},
-  year    = {--}
-}
-```
-
-> Replace the BibTeX fields above with the final publication metadata.
-
----
-
 ## License
 
-Add an appropriate license file for your intended release (e.g., MIT, Apache-2.0) and update this section accordingly.
+This project is licensed under the [MIT License](LICENSE) (or specify another intended license for your code). Note that the accompanying dataset is distributed under the CC BY-NC 4.0 license.
