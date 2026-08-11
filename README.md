@@ -8,7 +8,7 @@ An interactive web-based prototype is available at [the live demo](https://regis
 
 This repository provides a reference implementation of the paper:
 
-**Anatomy-Aware Deformable Registration for Posture Correction in Veterinary Thoracic Radiographs**
+**AnatMorph: Anatomy-Aware Deformable Image Registration for Pose Correction of Veterinary Thoracic Radiographs**
 
 The core idea is to make learning-based deformable image registration focus on the **thoracic ROI** (and avoid spurious deformation in non-ROI regions such as limbs/background) using:
 
